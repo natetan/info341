@@ -1,0 +1,141 @@
+Lecture 1
+
+9.28.16
+
+Latency - delay
+
+Network types
+	- LANs (Local Area Networks)
+	- WANs
+	- MANs
+
+Multiplexing - Multiple signals allowed at the same time
+	- The same fiber cable now supports 1000 connections at 190 gigabits persecond
+
+Internet is a collection of LANs
+
+Many different protocols out there
+
+Common delivery protocol
+	- Ethernet
+	- 
+
+Http Transaction
+	- 
+
+Layers
+	1. Physical (access points)
+	2. Address 
+		- Mac address, LLC (logical link control)
+	3. Network (IP address)
+	4. Transport 
+	5. Session
+	6. Presentation
+	7. Application
+
+Divestiture
+	1. AT&T had to breakup into different parts
+		- They were a monopoly and had no innovation
+
+Private/dedicated link environment
+	- Long distance call
+		LEC -> IXC -> LEC
+	- Freedom to choose your carriers
+	- You have to know where the problem is
+		- Where is the problem?
+	
+
+Lecture 2
+
+9.30.16
+
+LANs
+	- Privately owned
+	- High speed
+	- Shared media
+		a. your boundaries
+		b. radio signal - everyone connected to came channel
+	- geographically limited to building or campus
+		a. sending a singal through a copper wire only goes
+		   so far (100 meters)
+		b. the media used to make LANs are limited
+	- Kinds of network
+		a. Ethernet, wifi, 
+
+Protocol - set of rules
+	- we use the standard tcp/ip today
+	- made us all common so we can use the same protocol
+
+OSI Layers
+	1. Physical
+		- 
+	2. Data Link
+		- NIC, internet card inside the computer
+		- Address of the NIC (burned into the NIC card)
+			- Unique to every NIC card in the world
+	3. 
+	4.
+	5.
+	6.
+	7.
+CSMA/CD, CA protocol
+	1. Carrier sends a signal, then listens
+
+What happens as networks grow?
+	- Contention
+		- Competing for the resource
+		- Network contention protocols
+		- I listen before I send, while I send
+
+Access Points
+	- RF side, and wired side
+	- Connect to ethernet to router, to ethernet to router
+	- Connection to Everett (fiber)
+
+Network Topology - the way nodes are connected geometrically
+	- Broadcast-oriented: all transmissions heard by all stations
+	- Listening for many MAC addresses
+	- Every device is listening for every frame that passes by
+
+Ring Topology
+	- Ability to wrap (self heal)
+	- Circulate past all stations
+	- Frame circulates back to source where it is removed
+
+Simplex - one way
+	- AM/FM radio (response goes one way)
+Half deplux - send can receive but cant do it simultaneously
+Full duplex - send and receive simultaneously
+
+Star Topology
+	- Each device connected  to a central node
+
+ISPs connect together in San Jose (NAPs) - Network Access Points
+	- A packet from Japan to Korea = packet from Japan to Cali to Korea
+
+LATAs - when you go between LATAs, it's long distance
+	- Anything within LATAs are local connections
+	- Long distance carrer for between LATAs
+
+Last Mile - Local Exchange Carrier from the office connects to your home
+
+How to troubleshoot whether it's the app or network being slow?
+	- Getting the frames
+
+Private lines
+	- Dictate the performance end to end (not shared)
+	- Internet is shared so performance can be mysterious
+
+Routers connect networks physically
+
+Trusted connections
+	- Own it
+	- Multi-factor authentication
+	- Locked data closets/wpa2-wifi
+
+Carrier Hotel
+	- Where carrier long distance terminates in a city
+	- Seattle: Westin
+
+Office to office connections
+	- Connect to a local fiber
