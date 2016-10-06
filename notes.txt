@@ -139,3 +139,72 @@ Carrier Hotel
 
 Office to office connections
 	- Connect to a local fiber
+
+
+Lecture 3
+10.5.16
+
+Why are cabling and media selection critical in networks?
+	- 60% of your cost
+
+EIA/TIA standards
+	- breaks apart things into components
+	- color coded in the ethernet
+
+CAT 5e has almost entirely replaced CAT 5 in new installations
+
+Plenum - really just air. 
+
+UTP 
+	- Advantages (everywhere, high speed, cheap)
+	- Disadvantages (affected by EMI, difficult to splice
+
+Attenuation - breakup of power over distance
+
+Cable testing shows you sources of failures, including crosstalk, return loss,
+
+Cable is a bus topology
+	- Data goes through one cable (can be problematic - how do we make everyone's data private/)
+
+Virtual LAN
+	- Run multiple instances of the same LAN
+	- Guest networks 
+
+Multiple SSIDs can come with a LAN
+
+
+Coaxial Cables
+	- Single cable, high speeds
+
+Baseband - single channeling 
+Broadband - multiple channels (multiple apps simultaneously)
+
+Fiber uses prisms to send different colors for different channels
+
+Fiber Optic Cables
+	- Multimode fiber used for short and medium distance applications (LANs)
+		- 2 km
+	- Single mode (lasers - long distance)
+		- thousands of miles
+	
+	- Advantages
+		- super high speeds supported
+		- not affected by electromagnetic radiation
+		- less signal attenuation
+		- no electrical hazard
+	- Disadvantages
+		- Expensive 
+		- Difficult to splice
+	
+Measuring optic fiber singal strength
+	- Power meter
+
+Microwave communications
+	- put in places that are difficult to wire
+	- cost effective
+	- easy to install
+	- high speeds available
+
+	- limited to line of sight (30 miles, curvature of the earth)
+	- adversely affected by the weather
+
