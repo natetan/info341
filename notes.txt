@@ -208,3 +208,98 @@ Microwave communications
 	- limited to line of sight (30 miles, curvature of the earth)
 	- adversely affected by the weather
 
+Lecture 4
+10.7.16
+
+Satellite Communications
+	- Advantages
+		- High speed
+		- Cost is not distance dependent 
+	- Disadvantages
+		- .5 second delay
+		- Sensitive to sunspots
+		- Constant realigning 
+	- Inferior to a lot of other communications
+		- Really only use it when you can't do anything else
+			- Alaska, 3rd world countries
+	- RF at the physical layer
+	- Transmits frames
+		- Keeps track of frame number, their address, 
+	- It's data link 
+		- Sends data over a link
+	- Asynchronous - 1 character at a time
+	- Synchronous - 1 block at a time
+	- You'd want more frames in satellite communications
+		- More efficient
+
+Frames are blocks
+
+The more reliable the media, the larger the block frame
+	- Reliable media: fiber, Coax, copper, wired stuff
+	- Unreliable media: wireless
+	- Unguided media is more unreliable
+
+How big should a block be?
+	- Depends on the media
+	- Big blocks for fiber, but less number of blocks, since it is reliable
+
+How many frames?
+	- Depends on the media
+
+UDP should only be used over reliable media
+
+Simplest protocols in the world
+	- Xon
+	- Xoff
+	- They are flow control protocols
+
+Wireless Communications
+	- 2,4 GHz + 5 GHz
+	- 2 most important things
+		- Channels and power
+	- Frequency Hopping
+		- Constantly changing channel
+			- So people can't tune in to you
+	
+	- Advantages
+		- High speed
+		- Cost effective
+		- Easy to install
+	- Disadvantages
+		- Distance/cell size
+		- Interference - adversely affected by other 802.11
+		- Transmission insecure
+
+
+Access points always stay on the same channels
+	- Devices are the ones that move (roaming)
+
+SSIDs - name for the network
+
+Unlicensed frequency - anyone can use it
+
+Licensed frequency - used for secure networks
+
+Data Link Protocols - Rules which govern the way in which computing/network devices communicate at layer 2
+	- asynch, bisynch, SDLC, HDLC
+	- HDLC 
+		- Bit oriented protocol 
+		- 1 - 128 frames
+
+Functions of a Data Link Protocol
+	- Synchronization
+		- Establishing and maintaining synchronization between sender and receiver
+		- start bits and stop bits (in asynch, since there is no timing)
+	- Framing
+		- Protocol must be capable of marking the beginning and end of each transmission frame
+	- Control
+		- Protocol must perform minimum set of control functions
+	- Error Detection
+		- Must perform some degree of error detection
+
+Starting a session, goes through broadcasting
+
+IP - packets, ehternet - frames
+
+Do the broadcast bc u dont know the MAC address, only the IP address
+
