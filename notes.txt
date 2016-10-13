@@ -286,7 +286,7 @@ Data Link Protocols - Rules which govern the way in which computing/network devi
 		- Bit oriented protocol 
 		- 1 - 128 frames
 
-Functions of a Data Link Protocol
+Functions of a Data Link Protocol (quiz/test/exam)
 	- Synchronization
 		- Establishing and maintaining synchronization between sender and receiver
 		- start bits and stop bits (in asynch, since there is no timing)
@@ -303,3 +303,138 @@ IP - packets, ehternet - frames
 
 Do the broadcast bc u dont know the MAC address, only the IP address
 
+Lecture 5
+10.12.16
+
+Ethernet is a data link
+
+Licensed vs unlicensed frequency
+	- Licensed (only you can use it)
+	- Unlicensed (anybody can use it)
+
+Every factory has metal and wireless cannot go through metal
+
+Where do we get our frequencies from? (quiz/test/exam)
+	- FCC
+
+Quiz / midterm / test question
+
+advantages/disadvantages of these media
+
+copper 
+	- high speed
+	- cheap
+	- available
+
+	- distance is limited (330 feet)
+	- splicing is difficult
+
+fiber
+	- high speed
+	- resistant to electromagnetic interference
+	- good distance
+	- broadband (multiple channels)
+
+	- components are expensive
+	- difficult to splice
+microwave
+	- cheap
+	- high speed
+	- easy to install
+	- not tied to a structure (mobile)
+
+	- 30 mile distance (curvature of the earth)
+	- affected by weather
+
+satellite
+	- high speed
+	- cost is not distance dependent
+	- long distance
+
+	- affected by sunpots
+	- propagation deplay
+	- have to be realigned
+
+Case Study
+
+We have a data center with 100 servers
+
+Laptops on floors above
+
+Brand new building
+
+- First: ask how long we're gonna be there
+- How much downtime can we allow?
+- What will an hour of downtime cost us?
+
+
+Fiber for vertical distribution
+	- going up floors
+	- can go 1 km
+Copper for horizontal distribution
+	- For the single floorv(distance limited)
+
+Executives should be on a separate network
+	- Use a VLAN
+Systems Admins (1st floor, regular users)
+	- 
+
+
+What does a VLAN have to do with media?
+	- 
+
+Relationship between data link protocols and media
+	- latency, distance
+	- The more unreliable the media, the smaller thr frames
+
+
+One character at a time - use parity checking 
+
+Algorithm generates a checksum. The other side does the same thing.
+If these have the same, then it's good
+
+Data link ethernet frame
+
+flag -> address -> control -> info -> fcs -> flag
+
+address: form it came from (your NIC card)
+
+Phy protocols (physical) - csma/cd
+
+Data Link layer is split into MAC and LLC (logical link control)
+	- MAC is just ur address
+	- send, acknowledge
+	- LLC is the sequencing (how many frames?)
+		- waiting for frames
+
+
+Multiplexing - The ability to send multiple signals over 1 fiber
+
+- Treats each line like a dedicated line (think it's the only one on the line)
+
+1 line that connects the mux together
+
+DEC-----                 ----DEC
+IPX ----- mux--------mux ----IPX
+IP------                 ----IP
+
+Problems - Time division is not adequate
+
+Statistical time division multiplexing
+
+Network contention - Nothing to send, doesn't take a time slot
+
+40 Gigabits over 1 wire
+
+1000 40 gigabits, one fiber (single mode fiber)
+
+
+Transceiver - listen before/during I send
+Wireless doesn't use transceiver because it is half duplex
+Wireless uses CA so it doesn't buy that transceiver
+
+3 contention methods for wireless
+
+	- Polling
+	- CSMA/CD
+	- CSMA/CA
