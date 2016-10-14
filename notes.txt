@@ -438,3 +438,39 @@ Wireless uses CA so it doesn't buy that transceiver
 	- Polling
 	- CSMA/CD
 	- CSMA/CA
+
+Lecture 6
+10.14.16
+
+LAN Overview
+
+Shared media - have to listen before it sends
+
+CSMA/D - Listen before I send and listen while I send
+
+LAN applications
+	- High speed office networks
+	- Storage area networks
+		- The boxes in server farms
+	- Factory/manufacturing networks
+	- Backbone LANs
+		- Interconnect local lans
+		- No end systems connected to it
+			- Switch/routers aren't end devices 
+			- Backbone connects intermediate systems
+		- They do this to avoid contention 
+
+Data Link layer is split in 2 to split its functions
+	- MAC (just the address of the nic)
+	- LLC (does the rest)
+
+Ring Topology - Always guaranteed to the local access network
+Star Topology - Wrap - can self heal, but takes more wire and is expensive
+
+802.3 is ethernet
+
+Unicast - one address
+Multicast - specific set of addresses
+Broadcast - all addresses
+
+
