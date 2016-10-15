@@ -1,0 +1,23 @@
+
+How/where does one find TCP/IP packets on the LAN  ?     
+Through Wireshark, (network analyzer) we found them on the LAN
+
+TCP sequence numbers and ack’s    (why are they important 
+It's to troubleshoot. If ur missing a sequence number, it could've been dropped by someone
+
+
+How UDP differs from TCP     
+udp - no sequence numbers (real time services). udp on reliable stuff bc we dont want error correction. dont want to repeat transmission
+tcp - unreliable media, satellite, wireless
+
+
+What do TCP/UDP ports indicate  ?    
+they indicate what application ur using
+port 80 - tells u it is http
+Different ports are for different applications
+
+
+Describe how a device ARP’s, when/why             
+ARP - anytime u start a session, u have to find a partner, log in to something at uw, gotta ARP
+Whenever u establish a connection to a new device, u need to ARP to get the MAC address
+only ARP during the first discovery
