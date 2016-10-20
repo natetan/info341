@@ -473,4 +473,72 @@ Unicast - one address
 Multicast - specific set of addresses
 Broadcast - all addresses
 
+Lecture 7
+10.19.16
 
+TCP/IP Protocol and Addressing
+
+TCP/IP - set of protocols
+
+Token Bus
+	- Token is just the contention method and applies to different media
+
+IP is about talking to everything
+
+Distinguish appliactions based on their ports
+
+NFS runs over UDP
+
+know these for midterm/exam
+ - SMTP
+ - DNS 
+ - NFS (Network File Server)
+ - 
+
+ Port numbers identify the application
+
+ 8 bits = 1 octet
+
+ 192.168.100.0
+ 4 octets (192)(168)(100)(0)
+
+ 32 bits / 4 = 8
+
+ IP nums are from ISPs and ARIN
+
+ routers connect networks
+
+ Router is a layer 3 device
+
+ It's a network address if the last octet ends in a 0
+
+ IETF (Internet Engineering Task Force) - needs a port for his application
+
+ pc / laptop asks for these things
+ 	- Ip address
+	- subnet mask
+	- default gateway/router
+	- broadcast address
+
+Subnet Mask - Asks which portion of your ip address is allocated to network bits
+	- 255.255.255.0
+
+Default gateway - 192.168.1.1
+
+ARIN is better, so u dont get locked into ur ISP
+
+Class A address
+	- 1.0.0.0 - 127.0.0.0 (reserved), so it only goes to 126.0.0.0
+
+	- on 12.0.0.0, the first available device would get 12.0.0.1
+
+	- 255.0.0.0
+
+Class B Address
+	- 128.1.0.0 - 191.254.0.0
+	- 2 octets filled in
+	- Mask: 255.255.0.0
+
+Class c Address
+	- 3 octets are filled in
+	- 255.255.255.0
