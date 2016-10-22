@@ -542,3 +542,88 @@ Class B Address
 Class c Address
 	- 3 octets are filled in
 	- 255.255.255.0
+
+Lecture 8
+10.21.16
+
+envelope tcp/ip - midterm/exam
+
+	- ip contains tcp/ tcp contains telnet/ 
+
+type field vs length field -  midterm/exam
+	- the fields tell u the different protocols
+	- dix is proprietery
+	- ethernet is open (standard)
+
+network contention - competing for the network/media - midterm/exam
+
+	-  multiplexing: multiple connections on one link
+	- polling
+	- token passing
+	- csma/cd - listen before and while u send
+		- bc of a transceiver 
+		- wireless devices dont have a transceiver
+	- csma/ca
+
+	- csma/ca and csma/cd only works on LANs
+
+
+point to point vs multipoint - midterm/exam
+	- point to point: dont have to wait
+		- all about being a better a troubleshooter
+	- LAN: multipoint connection
+		- hard to troubleshoot and figure out
+
+Frame vs packet
+	 - frame: data link layer (also called a block)
+	 - tcp/ip: packets (network/transport layer)
+
+flow control - midterm/exam
+	- management of data flow between computers or devices or between nodes in a network so data can be handled at an efficient pace
+
+IP classes - distinguished by the num of IP address they could have
+	- A: N H H H  12.0.0.0       16M
+	- B: N N H H  128.12.0.0     65K
+	- C: N N N H  192.168.100.0  254
+
+Router is network layer
+	- router is not a switch
+
+All hosts have to point to the default network
+
+Subnet
+	- making one network look like many networks
+
+Broadcast would be 128..10.2.255 <-- last one is 255, bc it broadcasts to all machines
+
+Broadcast storm: Send a broadcast no one can respond to - consumes the entire network
+
+Public address - reachable thru the internet
+
+private address - people who got them from ARIN
+	- give other ppl some space
+
+
+Example
+
+ARIN gave you 192.76.210.0
+
+You have 8 bits
+
+Split it, and u get 14|14
+
+N|H
+128 62 32 16 | 8 4 2 1
+
+First available network: 192.76.210.16
+Router: 192.76.210.17
+Mask: 255.255.255.240 (16 + 32 + 64 + 128 = 240)
+Broadcast: 192.76.210.31 (16 + 8 + 4 + 2 + 1 = 31)
+
+next one
+network 192.76.210.32
+ip/router: 192.76.210.33
+Mask: 255.255.255.240
+Broadcast: 192.76.210.47 (32 + 8 + 4 + 2 + 1 = 47)
+
+General rule: stay on even bit boundaries
