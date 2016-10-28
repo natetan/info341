@@ -627,3 +627,15 @@ Mask: 255.255.255.240
 Broadcast: 192.76.210.47 (32 + 8 + 4 + 2 + 1 = 47)
 
 General rule: stay on even bit boundaries
+
+Almost everything is based on network based protocols. All tools are based on network protocols. midterm/exam
+Proxy server: takes all web traffic and goes to the proxy server so it can be monitored. midterm/exam
+
+Lecture 9
+10.28.16
+
+ACL - access list (permit IPs)
+	- Permit 193.72.12.250 port 21
+	- Permits that address to use FTP
+
+
