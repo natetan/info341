@@ -638,4 +638,6 @@ ACL - access list (permit IPs)
 	- Permit 193.72.12.250 port 21
 	- Permits that address to use FTP
 
+Convergence (midterm/exam)
+
 
