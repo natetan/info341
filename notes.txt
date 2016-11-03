@@ -641,3 +641,63 @@ ACL - access list (permit IPs)
 Convergence (midterm/exam)
 
 
+Lecture 10
+11.2.16
+
+MTU - Maximum transmission unit (exam)
+DWDM - fiber optic (prism)      (exam)
+Networks related to cybersecurity (exam)
+	- Almost all security mechanisms are based on network protocols
+
+
+Routing - process of forwarding an item from one location to another
+	- They forward traffic
+	- 2 major functions
+		- Routing: learning the logical topology of the network
+		- FOrwarding: FOrwarding packets from an inbound interface to an outbound interface
+
+Routing tables contain routes learned from neighbors
+
+RIP (routing information protocol)
+
+Two routers within an autonomous system are called interior
+
+Autonomous sytem - under one administrative control
+
+Exchange touring tables if part of the same AS
+
+All routers talk to each other if they have the same AS
+
+Security Perimeter - sacrifical LAN
+	- sits between inner layer and outer layer
+	- 
+
+Intrusion detection devices 
+	- Malware is a program
+
+Host Security Protocols
+
+Security is all about oruting
+
+BGP - Border Gateway Protocol
+	- Router uses it to connect to the internet
+
+When routing protocol asks u for number, it asks for the ARIN number
+
+Interior Gateway Protocol - Routing your own systems
+	- Used for routing within networks under a common network administration (AS)
+Exterior Gateway Protocol - The internet
+
+Peering points for a lot of asian countries are in San Jose, California
+
+Routing applies to your ISP connection
+
+Peering point locations dictate your redundancy
+
+Should choose Tier 1 - for redundancy and service
+
+Tier 2 buy access to tier 1
+
+Intranet - ur internal network
+
+
