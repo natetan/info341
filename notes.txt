@@ -700,4 +700,57 @@ Tier 2 buy access to tier 1
 
 Intranet - ur internal network
 
+Lecture 11
+11.4.16
+
+Windowing - sending multiple packets and getting multiple acknowledgements back
+
+Show IP route to look at routing tables
+
+NAT - Network Address Translation
+	- Allows to have a reachable network
+
+Autonomous System - set of routers under a single admin (exam)
+	- everyone is using the same rules
+
+BGP connects As's
+
+Static routes can connect other vendors
+
+Convergence - Fail-over. Reroute. How long it takes to reroute when a box fails
+	- the time it takes to reroute
+
+Distance Vector updates every 30 seconds
+
+Link state vs distance vector
+	- Distance vector does periodic updates
+		- affects convergence
+
+LAN Repeater - more distance, but more collions (since its purpose puts more things on the network)
+
+Bridge (3 basic functions - exam)
+	1. Build a table listing all layer 2 address and source port
+	2. Make forwarding decisions based on destination address
+	3. Filter if destination and source are on the same port
+	4. Forward if source and destination are on different ports
+	5. Break loops (spanning tree)
+
+The job of a bridge is to forward
+bridge - bridge table: MAC addresses
+	- forward all broadcast, multicast, unicast frames (exam)
+
+
+
+The bridge splits the layer and only takes the IP part and leaves the collions behind
+The other networks are isolated since the router separates that 
+
+Port mirroring - mirror the port, and they're on the same ethernet
+
+
+
+
+Routers stop broadcast storms from propogating
+
+
+
 
