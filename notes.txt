@@ -753,4 +753,113 @@ Routers stop broadcast storms from propogating
 
 
 
+Lecture 12: VLAN and Switching
+
+Physical level - hubs and repeaters
+Data Link level - bridges and switches 
+
+Shared media: used coaxial cables
+	- every device sees every transmitted frame
+	- every device sees every collision
+	- half duplex
+
+Hubs emulate coaxial cable (half-duplex)
+
+Broadcast domain
+	- seen by all devices 
+	- all frames in an all hub network are treated the same as a broadcast
+
+Collision domain
+	- Any 2 devices transmitting at the same time will collide
+
+Bridge splits collision domain in 2
+	- Bridge knows to either forward or not
+	- Filter (discard) if source and destination are on the same port
+
+Switch is a multi-port bridge
+	- each segment detween two devices is a separate collision domain 
+		- uses separate wire pairs
+		- capable of full-duplex
+		- collision free segment
+		- capable of independent bandwidth (speed) based on slowest device
+			- slowest speed does not determine the overall speed
+	- less collisions
+
+More devices, more collisions
+	- network will eventually fail since it cannot keep up
+
+When you go with full-duplex, chances of collision are very small
+
+Difference between switches and routers
+	- routers can connect other networks, but switches cannot
+	- switches hav buffering that allows the ability to keep legacy equipment in the network
+
+Layer 3 switches have routers built into them (modern switches)
+
+Normally, a router would have to connect 2 switches for 2 separate networks
+
+Switches forward broadcast (routers never forward)
+
+Lan switch complicates LAN troubleshooting
+	- It would be hard to troubleshoot which device is causing the problem
+	- mirroring needs to be set up to see the traffic on a different port
+
+Port mirroring - security issue
+	- You can watch the other traffic
+	- Someone can be monitoring your traffic without you knowing with mirroring
+
+Layer 2 switching
+	- hardware based bridging
+	- wire speed performance
+		- same speed within the device as the ports themselves
+	- high speed scalability
+	- low latency
+	- MAC address
+	-low cost
+	- only know layer 2 adderss (MAC)
+	- local delivery system within network
+
+End-to-end (long haul) ethernet
+	- High speed capability is important
+
+Why would a company use WAN over internet
+	- for privacy
+
+Companies are moving over to the internet since it is so much cheaper
+
+3 basic switches of a switch
+	- Build a CAM table listing all layer 2 addresses and source port
+		- content addressable memory table (table of mac addresses, and the port address it came on)
+	- Make forwarding decisions based on destination MAC address
+		- filter if source and destination are on same port
+		- forward if on different ports
+	- break up loops (spanning tree)
+		- network protocol that builds a logical loop-free topology for ethernet networks. 
+
+Difference between ARP table and CAM table
+	- CAM tables to map MAC to port number (used by switches)
+	- ARP maps MAC to IP
+
+CAM table needs to have periodic updates or it times out
+
+3 ways of forwarding traffic (switch)
+	- FastForward (cut-through)
+		- checks just enough to see where to send it
+		- lowest latency
+		- no error checking
+	- FragmentFree (modified cut-through or hybrid)
+		- checks that the header is good - would catch most collisions
+		- low latency
+		- filters most errors
+	- Store-and-Forward (default)
+		- Checks the entire frame
+		- highest latency
+		- all errors filtered
+
+Blocking vs non-blocking
+	- Non-blocking: internal bandwidth can handle all the port bandwidths, at the same time, at full capacity
+		- sum of all ports maximum bandwidth is less than backplane bandwidth
+		- backplane is internal architecture capacity
+	- Almost all switches today are non-blocking
+
 
