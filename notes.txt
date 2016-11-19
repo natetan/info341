@@ -862,4 +862,105 @@ Blocking vs non-blocking
 		- backplane is internal architecture capacity
 	- Almost all switches today are non-blocking
 
+Lecture 13: More VLAN
+
+11.18.16
+
+802.# is the standard working group
+802.#x is the standard feature
+
+ARP Flush Timeout
+	- Default is 14,400 seconds (4 hours)
+	- Configurable from 60 to 86,400 seconds (24 hours)
+CAM Table Timeout - 300 secs (5 mins)
+Ethernet Keepalives (sends them every 10 seconds)
+
+Bridge Protocol Data Unit (BPDU)
+	- Data message transmitted across a LAn to detect loops in network topologies 
+
+VLAN - Virtual Broadcast Domain within a switched LAN
+	- Effectively segments switches into separate LANs
+	- Invisible to each other (security improved, fewer broadcasts)
+	- Each has its own UP address pool (network)
+	- Lets us use multiple IP addresses within a network
+
+	- Establishes broadcast domains
+
+Trunk Link - can carry multiple VLANs (multiple IP networks)
+	- Special link that by default carries all VLANs
+
+Routers are the only device that can forward traffic between VLANs
+	- Do not forward broadcasts (keeps broadcasts from spreading)
+
+VLANs partition the network to carry multiple IP networks
+
+VLAn Frame Identification
+
+Nothing in a switch would allow VLANs to see each other
+
+VLAN Tagging was developed specifically for tagging
+	- Allows the packets to move back and forth
+	- Switch forwards based on the tag
+	- Multi-VLAN, inter-switch communications
+	- Places a unique identifier (tag) in header of each frame
+	- functions at layer 2
+
+IEEE 802.1Q Trunks (Tagging)
+	- open standard using frame tags to label traffic
+	- like an event badge, determines where you go
+
+VLAN Identification Tags
+	- 2 byte Tag Control Information (TCI)
+		- identifier plus priority (video vs voice) and drop eligible codes
+
+VLAn Examples
+	- IP Desk Phones
+	- Video Cameras
+	- Credit Card readers
+	- Door Access Card Readers
+	- Point of Sale Devices
+	- Video Displays
+
+Switching Loop or Bridge
+
+Loop can occur anytime there is a redundant path or  loop in the Layer 2 network
+	- They are prevented by blocking the redundant path
+	- Blocked link opens up if forwarding link fails
+
+	- STP removes the redundant paths
+
+More redundancy, more loops
+
+Traditional Design
+	- no loops
+	- lots of single point failures
+
+Redundancy design
+	- Lots of loops
+	- CAM table or MAC address flapping
+		- switches are burning themselves up moving MAC addresses around in the table
+	- Broadcasts trigger both
+
+	- STP blocks one of the paths so looping will not occur
+		- loops get cut off
+
+Redundancy
+	- avoid stranded networks
+	- to ensure availability 
+Spanning Tree
+	- Blocks redundant link
+With VLANs
+	- Each link can forward one VLAN
+		- block the other
+
+Network topology change
+	- added device
+	- failed link or device
+
+STP election
+	- devices share BPDUs (bridge protocol data unit)
+	- select blocked links
+	- occurs automatically
+	- can be programmed to control outcome
+
 
