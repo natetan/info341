@@ -963,4 +963,116 @@ STP election
 	- occurs automatically
 	- can be programmed to control outcome
 
+Lecture 14: Wireless Technologies
+11.30.16
+
+Cellular
+	- 1G: really just VoIP
+	- 2G: Texting (took a long time)
+	- 3G: Music streaming, caller ID, location information
+	- 4G: LTE: speeds are super fast (like a wired network)
+
+A big leap in capability in each advance in each generation
+	- More speed, more features
+
+Anatomy of cell system
+	- Cell connects to the cell tower, goes to base station (tells the signal where to go)
+	- Determines which cell to go to
+
+Cellular today
+	- Networks are moving closer to users
+	- Big cell sites are providing wide coverage
+	- Other options provide capacity/bandwidth
+		- Distributed Antenna Systems (DAS)
+		- Small cells
+		- Metro/small/micro cells
+
+Metrocells
+	- compact and discrete mobile phone basestations, unobstrusively located in urban areas
+	- can be mounted on lampposts, positioned on the sides of buildings or found indoors in stadiums, transport hubs and other public areas
+	- provide excellent mobile phone service, delivering very high data speeds and capacity, solving the problem of growing data traffic demand cost effectively
+
+Metro, small, and micro cells are within buildings
+
+LTE-LAA (Licensed Assisted Access) (licensed)
+
+LTE-Unlicensed
+	- enhanced ux with licensed anchor for control and mobility
+	- better capacity and range compared to wi-fi
+	- good neighbor to wi-fi, going beyond minimum requirements to ensure fair coexistence
+	- unified LTE network with common management of licensed and unlicensed system
+
+Ad hoc network: LAN that is built simultaneously as devices connect
+	- Instead of relying on a base station to coordinate the flow of messages to each node in the network, the individual network nodes forward packets to and from each other
+
+Wi-Fi (Wireless LAN)
+	- Divided into 2 parts
+	- Slower because it is half-duplex (can't transmit and receive simultaneously)
+	- 1997 - 802.11 (2Mbps max), 2.4 GHz
+	- 1999 - 802.11a (54 Mbps max), 5 GHz band
+	- 1999 - 802.11b (11 Mbps max), 
+	- 2007 - incorporated standards into 802.11
+		- a, b, d, e, g, h, i, j 
+			- defij add capabilities 
+	- 2009 - 802.11n (54-600 Mbps), 2.4 & 5 GHz
+		- Allows you to put both channels to double the speeds 
+	- 2012 - incorporated standards
+		- 802.11 k, r ,y , n, w, p, z, v, u, s to 802.11 - 2007 base
+	- 2013 - 802.11ac 5 GHz only increased speeds, wider channels
+		- Current version of what is out today
+	- 2016 - 802.11ac 'wave 2', wider channels, multiple transmit
+		- Send and talk to 2 different devices at once now
+	- 2010 - 802.11ad (first product out now). 60 GHz band+
+		- no one used it when it was released and a company just released something that supports this now (2016)
+	- Future (late 2017-2018) - 802.11ax release
+		- top speeds of 10 Gbps targeted
+		- improved efficiencies
+		- targeted for dense environments
+	
+Why you never really reach top speed
+	- For example, 100 Mbps max
+	- You can either talk 50% or listen 50%
+	- It's not full-duplex, and things get lost as well
+	- Some packet loss makes it resend
+
+Wi-Fi terms
+	- Wi-Fi service sets
+		- SSID (Service Set Identifier): network name, identifies network
+		- IBSS (Independent Basic Service Set): direct computer to computer wi-fi, adhoc wi-fi
+		- BSS (Basic Service Set): Wi-Fi through an access point
+		- ESS (Extended Service Set): multiple access points with a single SSID working to form a single network
+			- UW's network is an ESS
+
+Wi-Fi Channels
+	- 2.4 GHz
+		- 3 non-overlapping channels (1-6-11) (quiz/test/important/exam)
+		- other channels overlap with each other (1-5 interfere with each other)
+	- 5 GHz
+		- More channels, more complicated 
+		- 9 overlapping regular channels 
+		- DFS (Dynamic Frequency Selection) + 15 more
+			- These frequencies are used for other purposes
+			- Primarily used for other things, like military or weather radars
+			- Happens automatically within a system
+	- Wider channels
+		- 40 MHz added in 802.11n
+		- 80 MHz added in 802.11ac
+		- 160 MHz added in 802.11ac 'wave 2'
+		- More speed
+
+Co-channel interference (important/exam)
+	- 2 devices talking on the same channel interfering with each other
+	- 2 APs on the same channel cuts the bandwidth in half
+
+Adjacent-channel interference (important/exam)
+	- 2 overlapping channels are being used 
+		- channels 1 and 2 used at the same time (decrease bandwith)
+
+Non-Wi-Fi interference (important/exam)
+	- Bluetooth using the same frequency (2.4 GHz) that wi-fi does
+	- same for a microwave
+	- These other devices don't do CSMA/CD. They will not listen before they send 
+
+Large room with many devices connected has a lot more interference
+
 
