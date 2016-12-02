@@ -913,6 +913,9 @@ VLAN Tagging was developed specifically for tagging
 	- Places a unique identifier (tag) in header of each frame
 	- functions at layer 2
 
+	- Inserting a VLAN ID into a packet header in order to identify which VLAN the packet belongs to
+	- Switches use them to determine which ports or interfaces to broadcast a packet to
+
 IEEE 802.1Q Trunks (Tagging)
 	- open standard using frame tags to label traffic
 	- like an event badge, determines where you go
