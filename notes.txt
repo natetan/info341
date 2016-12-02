@@ -654,7 +654,7 @@ Routing - process of forwarding an item from one location to another
 	- They forward traffic
 	- 2 major functions
 		- Routing: learning the logical topology of the network
-		- FOrwarding: FOrwarding packets from an inbound interface to an outbound interface
+		- Forwarding: Forwarding packets from an inbound interface to an outbound interface
 
 Routing tables contain routes learned from neighbors
 
@@ -684,9 +684,17 @@ BGP - Border Gateway Protocol
 
 When routing protocol asks u for number, it asks for the ARIN number
 
-Interior Gateway Protocol - Routing your own systems
+Interior Gateway Protocols - Routing your own systems
 	- Used for routing within networks under a common network administration (AS)
-Exterior Gateway Protocol - The internet
+	- RIP, OSPF, EIGRP (distance vector)
+Exterior Gateway Protocols - The internet
+	- Route packets to other autonomous systems
+	- BGP is an example of an EGP
+
+Hops: One portion of the path between source and destination 
+	- Data packets pass through bridges, routers, and gateways between source and destination
+
+Hop Count: number of hops it takes (# of devices data has to pas through between source and destination)
 
 Peering points for a lot of asian countries are in San Jose, California
 
@@ -726,7 +734,7 @@ Link state vs distance vector
 	- Distance vector does periodic updates
 		- affects convergence
 
-LAN Repeater - more distance, but more collions (since its purpose puts more things on the network)
+LAN Repeater - more distance, but more collisions (since its purpose puts more things on the network)
 
 Bridge (3 basic functions - exam)
 	1. Build a table listing all layer 2 address and source port
