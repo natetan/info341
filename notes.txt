@@ -1010,7 +1010,7 @@ LTE-Unlicensed
 	- good neighbor to wi-fi, going beyond minimum requirements to ensure fair coexistence
 	- unified LTE network with common management of licensed and unlicensed system
 
-Ad hoc network: LAN that is built simultaneously as devices connect
+Adhoc network: LAN that is built simultaneously as devices connect
 	- Instead of relying on a base station to coordinate the flow of messages to each node in the network, the individual network nodes forward packets to and from each other
 
 Wi-Fi (Wireless LAN)
