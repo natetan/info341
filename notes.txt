@@ -1006,6 +1006,7 @@ Metrocells
 Metro, small, and micro cells are within buildings
 
 LTE-LAA (Licensed Assisted Access) (licensed)
+	- coexists with other devices on the same band
 
 LTE-Unlicensed
 	- enhanced ux with licensed anchor for control and mobility
@@ -1015,6 +1016,8 @@ LTE-Unlicensed
 
 Adhoc network: LAN that is built simultaneously as devices connect
 	- Instead of relying on a base station to coordinate the flow of messages to each node in the network, the individual network nodes forward packets to and from each other
+
+DFS (Distributed File System) - provides location transparency and redundancy to improve data availability in face of failure or heavy load by allowing shares in multiple different locations to be logically grouped under one folder, or DFS root 
 
 Wi-Fi (Wireless LAN)
 	- Divided into 2 parts
@@ -1085,5 +1088,141 @@ Non-Wi-Fi interference (important/exam)
 	- These other devices don't do CSMA/CD. They will not listen before they send 
 
 Large room with many devices connected has a lot more interference
+
+Lecture 15: Network Applications and Services
+12.2.16
+
+DHCP - Changes an IP address dynamically
+	- can roam around and move around
+	- gives u default gateway/router
+	- subnet mask
+	- gives u a DNS server (or multiple)
+	- use ipconfig to check
+	- network protocol that enables a server to automatically assign an IP address to a computer from a defined range of numbers (i.e., a scope) configured for a given network
+	- 
+
+Static IPs - for servers that shouldn't change
+	- services and servers shouldnt change so DNS can find it
+
+DNS - maps hostnames ot ip addresses
+	- Some can ahve the same DNS but different IP addresses
+	- Different domain names sharing the same IP address - possible
+		- uw.edu vs washington.edu
+	- get DNS from DNS provider
+		- dreamhost, namecheap
+		
+NTP - Network Time Protocol: synchronize time and date
+	- some security things are time based
+	- looking at logs and transactions and what happens at a certain time
+
+Wake on LAN: magic packet sent to the designated MAC address to wake up devices that are powered down or in sleep/hibernate
+	- Useful for tring to remote login into a computer that is off
+	- No one wants to open all computers in a pc lab manually (this wakes it up a lot quicker)
+	- 
+
+BOOTP: similar to DHCP, get an ip address, but also get the location of a boot image file to boot the device
+	- image downloaded via tftp.
+	- typically used with old style diskless unix workstations
+	- Useful
+		- clean image everytime u deploy a pc
+		- wipe them out and start over
+
+Internet standarsd-based applications
+	- Overseen by ietf, divided into working groups around specific areas (web, email)
+
+	- Standards are developed and published as RFC's
+
+	- Primary goal of standards is to promote interoperability
+		- You can send email to anyone regardless of the email client or service they use bc all agree to a standard
+
+Telnet - remote login to another computer
+	- dumb-terminal command line
+	- terminal emulation often provided by the telnet client
+	- no computing actuall happening on the local device
+	
+	- Many devices these days use ssh, which is encrypted 
+
+SMTP - provides a mechanism to send ASCII/text messages 
+
+MIME (Multipurpose Internet Mail Extensions)
+	- Support non ASCII/text in a message
+	- Support binary files/attachments such as video, audio, word docs, etc
+	- MIME-Version: 1.0 Content-type: multipart/mixed
+
+POP (Post Office Protocol) - Store, copy, delete
+	- Helps end users manage their messages
+	- simple protocol and widely used
+
+	- Bad for users that use multiple machines
+		- If it's gone from the server on one machine, it's gone from the other machine
+	- Most people use web-based emails like Gmail, Yahoo, etc
+	- Advantages of POP
+		- data is yours
+		- read emails when you're not online
+		- security purposes
+
+IMAP4 (Internet Mail Access Protocol) - folders and messages can be stored in local
+
+Instant Messaging
+	- Mostly all propreitary today
+	- Vendors are using their own standards and not following protocols
+	- Android cannot use iMessage as an example
+	- About trying to lock you into getting their devices (FaceTime only for Apple devices)
+
+HTTP - Hypertext Transfer Protocol
+	- Request/response protocol where a client makes requests for a particular URI from a server
+
+Common LAN Network Services
+
+File and Print Sharing 
+	- Disk on a wire concept: fast access to remote files just like they existed locally on your device
+
+File Service Protocols
+
+SMB (Server Message Block)
+	- Also referred to as CIFS (Common Internet File System)
+	- Typically used to access Windows shares
+
+NFS (Network File System)
+
+AFP (Apple Filing Protocol)
+	- Typically only used in Apple environments
+
+Printer Service Protocols
+	- Print on a wire concept
+	- Share a printer so on a print-server and connect to from the client so it appears like a local printer to users
+	- SMB - Windows
+	- LPD/LPD: line printer, line printer remote protocol UNIX
+	- Bonjour: Apple, also works with Windows as a background service
+		- iTunes downloaded on Windows machine. It works in the background all the time
+
+Authentication and Authorization
+
+Authorization: process where certain rights are granted to particular people
+
+Active Directory: Manage authentication and authorization
+	- Windows centric technology for managing authentication and authorization 
+		- objects present in AD includes users, computers, and groups
+	- Groups can be used to bunch multiple users together (like those in the HR department)
+	- System admins create (or provision via automation) users and groups
+	- This critical data is stored on domain controllers, designated servers that are typically redundant and the most protected
+
+Group Policy: allows IT to manage hundreds or thousands of machines with the click of a single button
+	- Can enforce security policies
+	- Can turn on for a segment of users
+
+Federated Authentication
+	- Idea of leveraging one credential for use on another system in a way that only the very minimum amount of information is shared with the third party
+
+SAML - Security Assertion Markup Language
+OpenAuth
+Shibboleth
+
+The Cloud
+	- Many traditional on-premise services are now moving into the cloud
+	- Services such as Amazon AWS or Microsoft Azure allow IT to potentially scale servers 'on demand' and respond more quickly to end-user needs
+	- Large concerns about security, loss of control, and regulation/compliance
+	- 
+
 
 
