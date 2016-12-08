@@ -1225,4 +1225,61 @@ The Cloud
 	- 
 
 
+Lecture 15: Network Security
+12.7.16
+
+Important concepts
+	- Everything is a target
+	- Everything is a weapon
+	- Assume compromise
+	- Good defense is risk-driven
+
+Assume compromise - assume that some part of the network has been compromised
+	- That way, you can be better prepared
+
+Information Security (InfoSec)
+	- How we protect information at a higher level
+
+Application Security
+	- Focus on things like user logins, and tracking prvileges
+	- Encrypting data over a network
+
+Endpoint Security (Host security)
+	- Anti-malware software
+	- Malware detection
+	
+Network Security
+	- Primarily deals with data as it transits
+	
+CIA - Confidentiality, Integrity, Availability
+
+AAA - Authentication, Authorization, Accountability
+	- Who can come into the network
+	- Identify people (are they who they say they are?)
+	- Provide access
+
+Anatomy of an Attack
+	- Attacker
+	- Attack
+	- Exploits
+	- Vulnerability
+	- Outcome
+	- Objective
+
+Attack Classification 
+	- STRIDE Model
+		- Spoof
+		- Tamper
+		- Repudiate
+		- Information Disclosure
+		- Denial of Service
+		- Elevation of Privilege
+
+Architecture is the foundation
+	- Satifies business requirements
+	- Establishes trust boundaries
+	- Controls information flow
+	- Reduces attack surface
+	- Limits blast radius
+
 
